@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  background-color: #352F44;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+}
+.wrapper {
+  border: 2px solid #FAF0E6;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 25px;
+  background-color: #B9B4C7;
+  margin-top: 80px;
+  margin-left: 500px;
+  width: 22%;
+  height: 420px;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  box-sizing: border-box;
+} 
+.input-field input {
+  width: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  background-color: #FAF0E6;
+  color:#5C5470;
+}
+.row-1, .row-2, .row-3, .row-4, .row-5{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.row-1 button, 
+.row-2 button,
+.row-3 button,
+.row-4 button {
+  width: 70px;
+  height: 50px;
+  background-color: #5C5470;
+  color: #FAF0E6;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid #FAF0E6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.row-5 button{
+  width: 70px;
+  height: 50px;
+  background-color: #5C5470;
+  color: #FAF0E6;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid #FAF0E6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #352F44;
+}
+#equal-btn, #clear-btn{
+  width: 140px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 20px;
   }
 }
